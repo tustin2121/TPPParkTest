@@ -1,2 +1,1 @@
-# Redirect to the classic Park
-Redirect 302 / tustin2121.github.io/TPPParkClassic/
+AddType text/cache-manifest appcache.mf

@@ -1,0 +1,62 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+	<script src="/js/jquery-2.1.1.min.js"></script>
+	<script src="/js/jquery.cookie.js"></script>
+	<script src="/js/three.min.js"></script>
+	
+	<script src="/js/zip/zip.js"></script>
+	<script src="/js/zip/zip-fs.js"></script>
+	<script src="/js/zip/zip-ext.js"></script>
+	<script src="/js/zip/inflate.js"></script>
+	<script>zip.workerScriptsPath = "/js/zip/";</script>
+	
+	<script src="/js/game.js"></script>
+</head>
+<body>
+	<table id="overtable">
+		<tr>
+			<td>
+				<div class="canvas-wrap">
+					<canvas id="gamescreen"></canvas>
+					<div id="statusbar">Testing</div>
+					<div id="padding"></div>
+				</div>
+			</td>
+			<td id="right-sidebar">
+				<div id="chat-container">
+					<div class="header">TPP Park</div>
+					<div class="messages">
+						<ul class="chat-lines" id="chat-lines">
+							<li class="chat-line admin">
+								<span class="message">Welcome to the chat room!</span>
+							</li>
+							<li class="chat-line">
+								<span class="badges"></span>
+								<span class="from" style="color:#008000">Tustin2121</span><span class="colon">:</span><span class="message">Hello World Kappa</span>
+							</li>
+							<li class="chat-line">
+								<span class="badges"></span>
+								<span class="from" style="color:#B22222">Tustin2121</span>
+								<span class="colon">:</span>
+								<span class="message">Hello World Kappa</span>
+							</li>
+						</ul>
+					</div>
+					<div class="interface">
+						<div class="more-messages">More messages below.</div>
+						<textarea class="chatbox"></textarea>
+						<div class="chat-buttons">
+							<button class="send-chat-button">Chat</button>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	<div class="canvas-wrap">
+		
+	</div>
+</body>
+</html>
