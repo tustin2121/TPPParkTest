@@ -1,4 +1,6 @@
---- ---
+---
+path2: /{{site.github.project_title}}
+---
 <html>
 <head></head>
 <body>
@@ -28,12 +30,11 @@
 	<p>{{ site.time }}</p>
 	<p>{{ site.github.project_title }}</p>
 	<p>{{ site.destination }}</p>
-	<p>{{ site.include }}</p>
 	<p>{{ site.baseurl }}</p>
 	<p>{{ site.url }}</p>
-	<p>{{ site.source }}</p>
-	<p>{{ site.html_pages }}</p>
-	<p>{{ site.pages }}</p>
+	<p>{{ page.path2 }}</p>
+	<p>{{page.path2}}</p>
+	<p>{{path2}}</p>
 	<p>{{ page.url }}</p>
 </body>
 </html>
