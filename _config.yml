@@ -1,4 +1,4 @@
 exclude: ["node_modules", "src"]
 include: []
 baseurl: /TPPParkTest
-url: /{{site.github.project_title}}
+url: "/{{site.github.project_title}}"
