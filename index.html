@@ -1,6 +1,7 @@
 ---
-path2: site.github.project_title
+path2: {% capture path3 %}/{{ site.github.project_title }}{% endcapture %}
 ---
+{% capture basepath %}/{{ site.github.project_title }}{% endcapture %}
 <html>
 <head></head>
 <body>
@@ -31,8 +32,9 @@ path2: site.github.project_title
 	<p>{{ site.github.project_title }}</p>
 	<p>{{ site.destination }}</p>
 	<p>{{ site.baseurl }}</p>
-	<p>{{ site.url }}</p>
-	<p>{{page.path2}}</p>
-	<p>{{ page.url }}</p>
+	<p>u={{ site.url }}</p>
+	<p>2={{page.path2}}</p>
+	<p>3={{ page.path3 }}</p>
+	<p>b={{ page.basepath }}</p>
 </body>
 </html>
