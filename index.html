@@ -1,7 +1,6 @@
 ---
-path2: {% capture path3 %}{{ site.github.project_title | prepend:'/' }}{% endcapture %}
 ---
-{% capture basepath %}{{ site.github.project_title | prepend:'/' }}{% endcapture %}
+{% capture attribute_name %}{{ site.github.project_title | prepend:'/' }}{% endcapture %}
 <html>
 <head></head>
 <body>
@@ -37,5 +36,7 @@ path2: {% capture path3 %}{{ site.github.project_title | prepend:'/' }}{% endcap
 	<p>2={{page.path2}}</p>
 	<p>3={{ page.path3 }}</p>
 	<p>b={{ page.basepath }}</p>
+	<p>pa={{ page.attribute_name }}</p>
+	<p>aa={{ attribute_name }}</p>
 </body>
 </html>
