@@ -1,7 +1,7 @@
 ---
-path2: {% capture path3 %}/{{ site.github.project_title }}{% endcapture %}
+path2: {% capture path3 %}{{ site.github.project_title | prepend:'/' }}{% endcapture %}
 ---
-{% capture basepath %}/{{ site.github.project_title }}{% endcapture %}
+{% capture basepath %}{{ site.github.project_title | prepend:'/' }}{% endcapture %}
 <html>
 <head></head>
 <body>
@@ -30,6 +30,7 @@ path2: {% capture path3 %}/{{ site.github.project_title }}{% endcapture %}
 	
 	<p>{{ site.time }}</p>
 	<p>{{ site.github.project_title }}</p>
+	<p>/= {{ site.github.project_title | prepend:'/' }}</p>
 	<p>{{ site.destination }}</p>
 	<p>{{ site.baseurl }}</p>
 	<p>u={{ site.url }}</p>
