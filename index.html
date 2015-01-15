@@ -1,5 +1,10 @@
+---
+---
+{% capture baseurl %}{{ site.github.project_title | prepend:'/' }}{% endcapture %}
 <html>
-<head></head>
+<head>
+	<script>window.BASEURL = "{{ baseurl }}";</script>
+</head>
 <body>
 	Thank you for travelling to Twitch Plays Pokemon Park!
 	
