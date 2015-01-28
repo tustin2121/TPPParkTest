@@ -101,6 +101,15 @@ body {
   margin-right: auto;
   background-color: #ffffff;
 }
+#canvas-ui {
+  position: relative;
+  float: left;
+  width: 600px;
+  height: 500px;
+}
+#canvas-ui .skrim {
+  background-color: #000000;
+}
 #overtable {
   width: 100%;
   height: 100%;
@@ -111,9 +120,12 @@ body {
   padding: 0;
 }
 #gamescreen {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 600px;
   height: 500px;
+  z-index: -10;
 }
 #right-sidebar {
   background-color: blue;
@@ -134,6 +146,19 @@ body {
   border: ridge 2px #cccccc;
   background-color: #eeeeee;
   color: #000000;
+}
+.dialogbox,
+.textbox {
+  position: absolute;
+  display: inline-block;
+  max-width: 400px;
+  padding: 2px 6px;
+}
+.textbox {
+  margin: 6px 20px 8px 9px;
+}
+.dialogbox {
+  margin: 6px 6px 9px 6px;
 }
 .twitchemote {
   display: inline-block;
