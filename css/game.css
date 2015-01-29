@@ -147,18 +147,20 @@ body {
   background-color: #eeeeee;
   color: #000000;
 }
-.dialogbox,
-.textbox {
+.dialogbox {
   position: absolute;
   display: inline-block;
   max-width: 400px;
   padding: 2px 6px;
 }
-.textbox {
+.dialogbox.text {
   margin: 6px 20px 8px 9px;
 }
-.dialogbox {
+.dialogbox.dialog {
   margin: 6px 6px 9px 6px;
+}
+hlt {
+  color: #FF0000;
 }
 .twitchemote {
   display: inline-block;
