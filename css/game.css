@@ -5,6 +5,16 @@ html {
 body {
   margin: 0;
 }
+@font-face {
+  font-family: PokeDialog;
+  src: url("pkmndp.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: PokeDialog;
+  src: url("pkmndpb.ttf");
+  font-weight: bold;
+}
 #chat-container {
   position: relative;
   background-color: #F2F2F2;
@@ -109,6 +119,9 @@ body {
 }
 #canvas-ui .skrim {
   background-color: #000000;
+  position: absolute;
+  width: 600px;
+  height: 500px;
 }
 #overtable {
   width: 100%;
@@ -152,6 +165,7 @@ body {
   display: inline-block;
   max-width: 400px;
   padding: 2px 6px;
+  font-family: PokeDialog, "Small Fonts", monospace;
 }
 .dialogbox.text {
   margin: 6px 20px 8px 9px;

@@ -1,0 +1,63 @@
+html {
+  margin: 0;
+  background-color: #C2ECFF;
+}
+body {
+  margin: 0;
+}
+.rheight {
+  height: 500px;
+}
+.rwidth {
+  width: 880px;
+}
+.size-ref {
+  height: 500px;
+  width: 880px;
+  border: 1px #4F5BFF solid;
+  background-color: #78D6FF;
+  margin: 16px auto 0;
+  text-align: center;
+}
+.wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+#size-recommend:before {
+  content: 880px;
+}
+#size-recommend:after {
+  content: 500px;
+}
+.reject,
+.warning,
+.welcome {
+  display: none;
+}
+#charSelector {
+  height: 113;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background-color: #78D6FF;
+}
+#charSelector > div {
+  position: relative;
+  display: inline-block;
+  background-image: url("ticket.png");
+  width: 44px;
+  height: 87px;
+  border: solid 3px #78D6FF;
+}
+#charSelector > div.selected {
+  border: solid 3px red;
+  background-color: red;
+}
+#charSelector > div > div {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 32px;
+  height: 32px;
+}
