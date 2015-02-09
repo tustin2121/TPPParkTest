@@ -386,3 +386,146 @@ hlt {
   margin: -4.5px 0;
   background-position: -450px -29px;
 }
+#touchcontrols {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.dpad {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+@media (orientation: portrait) {
+  .dpad {
+    bottom: 100px;
+    left: 100px;
+  }
+}
+@media (orientation: landscape) {
+  .dpad {
+    bottom: 50%;
+    left: 100px;
+  }
+}
+.button {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.3);
+  width: 80px;
+  height: 80px;
+  display: table;
+}
+.button:after {
+  display: table-cell;
+  color: rgba(200, 200, 200, 0.8);
+  vertical-align: middle;
+  text-align: center;
+}
+.button.a:after {
+  content: "A";
+}
+@media (orientation: portrait) {
+  .button.a {
+    bottom: 60%;
+    right: 10px;
+  }
+}
+@media (orientation: landscape) {
+  .button.a {
+    bottom: 60%;
+    right: 20px;
+  }
+}
+.button.b:after {
+  content: "B";
+}
+@media (orientation: portrait) {
+  .button.b {
+    bottom: 30%;
+    right: 20px;
+  }
+}
+@media (orientation: landscape) {
+  .button.b {
+    bottom: 38%;
+    right: 10px;
+  }
+}
+.button.run:after {
+  content: "Run";
+}
+@media (orientation: portrait) {
+  .button.run {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (orientation: landscape) {
+  .button.run {
+    bottom: 48%;
+    right: 80px;
+  }
+}
+.button.menu {
+  width: 110px;
+  height: 60px;
+}
+.button.menu:after {
+  content: "Start";
+}
+@media (orientation: portrait) {
+  .button.menu {
+    top: 10px;
+    left: 20px;
+  }
+}
+@media (orientation: landscape) {
+  .button.menu {
+    top: 10px;
+    right: 20px;
+  }
+}
+.button.up {
+  border-radius: 0%;
+  height: 90px;
+  width: 60px;
+  bottom: 50px;
+  left: -5px;
+}
+.button.up:after {
+  content: "/\\";
+}
+.button.down {
+  border-radius: 0%;
+  height: 90px;
+  width: 60px;
+  top: 50px;
+  left: -5px;
+}
+.button.down:after {
+  content: "\\/";
+}
+.button.left {
+  border-radius: 0%;
+  height: 60px;
+  width: 90px;
+  right: 50px;
+  top: -5px;
+}
+.button.left:after {
+  content: "<";
+}
+.button.right {
+  border-radius: 0%;
+  height: 60px;
+  width: 90px;
+  left: 50px;
+  top: -5px;
+}
+.button.right:after {
+  content: ">";
+}
