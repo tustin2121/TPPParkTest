@@ -12,12 +12,20 @@ body {
   width: 880px;
 }
 .size-ref {
-  height: 500px;
+  position: relative;
+  height: 480px;
   width: 880px;
   border: 1px #4F5BFF solid;
   background-color: #78D6FF;
-  margin: 16px auto 0;
+  margin: 16px auto 16px;
   text-align: center;
+  padding-top: 20px;
+}
+.size-ref #credit {
+  position: absolute;
+  top: 505px;
+  right: 0;
+  font-size: 8pt;
 }
 .wrapper {
   max-width: 840px;
