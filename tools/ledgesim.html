@@ -3,6 +3,7 @@
 {% capture baseurl %}{{ site.github.project_title | prepend:'/' }}{% endcapture %}
 <html>
 <head>
+	<title>Ledge Simulator 2015 (Not Flarn's)</title>
 	<script>window.BASEURL = "{{ baseurl }}";</script>
 	<link rel="stylesheet" type="text/css" href="{{ baseurl }}/css/game.css">
 	<script src="{{ baseurl }}/js/jquery-2.1.1.min.js"></script>
@@ -19,7 +20,7 @@
 	<script src="{{ baseurl }}/js/preload.js"></script>
 	
 	<link href="{{ baseurl }}/js/eventlib.js" rel="subresource"></link>
-	<link href="gallery.js" rel="subresource"></link>
+	<link href="ledgesim.js" rel="subresource"></link>
 	
 	<script> 
 	//Async Loader! http://www.html5rocks.com/en/tutorials/speed/script-loading/
@@ -29,7 +30,7 @@
 		"three.js",
 		"OrbitControls.js",
 		"{{ baseurl }}/js/eventlib.js",
-		"gallery.js"
+		"ledgesim.js"
 	].forEach(function(src) {
 		var script = document.createElement('script');
 		script.src = src;
@@ -55,6 +56,7 @@
 	</script>
 	<style>
 	#mutebutton {
+		color: white;
 		position: fixed;
 		top: 10px; right: 10px;
 	}
@@ -73,7 +75,7 @@
 							<progress />
 						</div>
 					</div>
-					<div id="statusbar">Now with background music! (Volume Slide to come)</div>
+					<div id="statusbar"></div>
 				</div>
 			</td>
 		</tr>
