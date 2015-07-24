@@ -153,6 +153,7 @@ var KNOWN_SONGS = {
 	"m_gamecorner":		{ "loopStart": 18.61, "loopEnd": 79.010 },
 	"m_casino_win":		{ "loopStart": 3.160, "loopEnd": 15.167 },
 	"m_casino_win2":	{ "loopStart": 1.516, "loopEnd": 12.185 },
+	"m_soar_nighttime":	{ "loopStart": 26.656,"loopEnd": 111.057 },
 };
 },{"../gamestate":6,"../managers/soundmanager":7,"../model/renderloop":8,"../polyfill.js":9,"extend":"extend","raf":4}],2:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
