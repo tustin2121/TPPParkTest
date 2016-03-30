@@ -68,7 +68,7 @@ body {
 } 
 */
 #right-sidebar {
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   width: 400px;
   min-width: 280px;
 }
@@ -83,7 +83,7 @@ body {
   left: 15px;
   right: 15px;
   font-size: 0px;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.2) inset;
   z-index: 10;
 }
@@ -94,7 +94,7 @@ body {
   top: 0;
   bottom: 0;
   width: 15px;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
 }
 #right-sidebar .header:before {
   left: -15px;
@@ -113,18 +113,18 @@ body {
 }
 #right-sidebar .header .tab.selected {
   color: #FFFFFF;
-  background-color: #6441a5;
+  background-color: #6441A5;
 }
 #right-sidebar .header .tab:first-child {
   margin-left: 0;
 }
 #right-sidebar .header #tab-dex.selected {
-  background-color: #b52323;
+  background-color: #B52323;
 }
 #right-sidebar .tabcontainer {
   display: none;
   position: relative;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   padding: 0px 15px;
   height: 100%;
 }
@@ -206,7 +206,7 @@ body {
   color: #666666;
 }
 #dex-container.tabcontainer {
-  background-color: #b52323;
+  background-color: #B52323;
 }
 #dex-container.tabcontainer .omnibar {
   position: absolute;
@@ -258,7 +258,7 @@ body {
 #dex-container.tabcontainer .breadcrumb li a {
   color: #000000;
   display: block;
-  background: #fff373;
+  background: #FFF373;
   text-decoration: none;
   position: relative;
   height: 26px;
@@ -291,7 +291,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  border: 0 solid #fff373;
+  border: 0 solid #FFF373;
   border-width: 13px 0px 13px 8px;
   width: 0;
   height: 0;
@@ -303,7 +303,7 @@ body {
 #dex-container.tabcontainer .breadcrumb li a:after {
   left: 100%;
   border-color: transparent;
-  border-left-color: #fff373;
+  border-left-color: #FFF373;
 }
 #dex-container.tabcontainer .breadcrumb li a:hover,
 #dex-container.tabcontainer .breadcrumb li a.selected {
@@ -326,8 +326,8 @@ body {
   bottom: 0;
   top: 102px;
   margin: 3px;
-  background-color: #f2f2f2;
-  border: 2px inset #b52323;
+  background-color: #F2F2F2;
+  border: 2px inset #B52323;
   overflow-y: scroll;
 }
 #dex-container.tabcontainer .content index,
